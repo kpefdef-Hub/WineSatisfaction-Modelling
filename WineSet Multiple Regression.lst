@@ -1,0 +1,240 @@
+*------------------------------------------------------------*
+User:                u63223071
+Date:                07 March 2023
+Time:                21:02:51
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          3
+TARGET     INTERVAL          1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable           Label
+ 
+TARGET       quality
+PREDICTED    P_quality    Predicted: quality
+RESIDUAL     R_quality    Residual: quality
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG_DMDB
+Target Variable               quality
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    4
+Number of Observations        4519
+ 
+ 
+              Descriptive Statistics for Continuous Variables
+ 
+                                  Standard
+Variable             Mean        Deviation          Minimum          Maximum
+ 
+alcohol         10.483605         1.186110         8.000000        14.050000
+pH               3.217402         0.156667         2.740000         3.690000
+price           14.414698         5.641759         5.000000        31.590000
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   3     1314.012255      438.004085     950.33    <.0001
+Error                4515     2080.951233        0.460897
+Corrected Total      4518     3394.963487
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3870     Adj R-Sq        0.3866
+AIC         -3496.3291     BIC         -3494.3220
+SBC         -3470.6649     C(p)            4.0000
+ 
+ 
+                       Analysis of Maximum Likelihood Estimates
+ 
+                               Standard                              95% Confidence
+Parameter    DF    Estimate       Error    t Value    Pr > |t|           Limits
+ 
+Intercept     1      5.0058      0.2259      22.16      <.0001      4.5631      5.4485
+alcohol       1     -0.0408      0.0132      -3.10      0.0019     -0.0667     -0.0150
+pH            1     -0.0753      0.0649      -1.16      0.2463     -0.2025      0.0520
+price         1      0.1021     0.00276      37.01      <.0001      0.0967      0.1075
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=quality Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                     Train    Validation
+ 
+ _AIC_        Akaike's Information Criterion    -3496.33          .
+ _ASE_        Average Squared Error                 0.46         0.48
+ _AVERR_      Average Error Function                0.46         0.48
+ _DFE_        Degrees of Freedom for Error       4515.00          .
+ _DFM_        Model Degrees of Freedom              4.00          .
+ _DFT_        Total Degrees of Freedom           4519.00          .
+ _DIV_        Divisor for ASE                    4519.00      1937.00
+ _ERR_        Error Function                     2080.95       931.15
+ _FPE_        Final Prediction Error                0.46          .
+ _MAX_        Maximum Absolute Error                2.85         2.73
+ _MSE_        Mean Square Error                     0.46         0.48
+ _NOBS_       Sum of Frequencies                 4519.00      1937.00
+ _NW_         Number of Estimate Weights            4.00          .
+ _RASE_       Root Average Sum of Squares           0.68         0.69
+ _RFPE_       Root Final Prediction Error           0.68          .
+ _RMSE_       Root Mean Squared Error               0.68         0.69
+ _SBC_        Schwarz's Bayesian Criterion      -3470.66          .
+ _SSE_        Sum of Squared Errors              2080.95       931.15
+ _SUMW_       Sum of Case Weights Times Freq     4519.00      1937.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=quality Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          226        7.34071     6.92034
+  10          227        6.87225     6.63656
+  15          225        6.48889     6.47494
+  20          226        6.45133     6.34818
+  25          226        6.19912     6.25291
+  30          226        6.05752     6.15255
+  35          227        5.94714     6.06248
+  40          225        5.95111     5.98364
+  45          226        5.70354     5.89697
+  50          226        5.59292     5.82023
+  55          226        5.32743     5.74230
+  60          226        5.25221     5.66758
+  65          226        5.39381     5.59264
+  70          226        5.32743     5.50672
+  75          226        5.46903     5.40469
+  80          226        5.30531     5.32025
+  85          226        5.41150     5.22550
+  90          226        5.38496     5.13412
+  95          227        5.34361     5.04602
+ 100          224        5.30804     4.93788
+ 
+ 
+Data Role=VALIDATE Target Variable=quality Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          97         7.35052     6.95997
+  10          97         6.85567     6.66313
+  15          97         6.67010     6.50410
+  20          97         6.45361     6.38056
+  25          97         6.31959     6.27807
+  30          97         6.15464     6.17132
+  35          96         6.02083     6.08844
+  40          97         5.84536     5.99782
+  45          97         5.84536     5.91298
+  50          97         5.44330     5.82920
+  55          97         5.40206     5.75090
+  60          97         5.19588     5.68245
+  65          97         5.29897     5.59486
+  70          97         5.38144     5.49799
+  75          96         5.42708     5.39974
+  80          97         5.32990     5.32049
+  85          97         5.61856     5.22879
+  90          97         5.37113     5.12716
+  95          99         5.45455     5.03707
+ 100          94         5.31915     4.93985
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=quality Target Label=' '
+ 
+  Range for         Mean        Mean        Number of      Model
+  Predicted        Target    Predicted    Observations     Score
+ 
+7.316 -  7.448    8.11111     7.36802            9        7.38176
+7.184 -  7.316    7.83333     7.22521           12        7.24988
+7.052 -  7.184    7.65217     7.08932           23        7.11799
+6.920 -  7.052    7.48077     6.98765           52        6.98610
+6.788 -  6.920    7.20290     6.84297           69        6.85421
+6.656 -  6.788    6.99301     6.72506          143        6.72233
+6.524 -  6.656    6.79006     6.58889          181        6.59044
+6.393 -  6.524    6.48095     6.45632          210        6.45855
+6.261 -  6.393    6.37966     6.32508          295        6.32666
+6.129 -  6.261    6.12375     6.19610          299        6.19478
+5.997 -  6.129    5.94780     6.06130          364        6.06289
+5.865 -  5.997    5.82659     5.93281          346        5.93100
+5.733 -  5.865    5.52941     5.80216          391        5.79911
+5.601 -  5.733    5.24396     5.66696          414        5.66722
+5.469 -  5.601    5.41925     5.53937          322        5.53534
+5.338 -  5.469    5.43598     5.39935          328        5.40345
+5.206 -  5.338    5.33333     5.27441          312        5.27156
+5.074 -  5.206    5.38439     5.13897          346        5.13967
+4.942 -  5.074    5.33808     5.01297          281        5.00779
+4.810 -  4.942    5.23770     4.90930          122        4.87590
+ 
+ 
+Data Role=VALIDATE Target Variable=quality Target Label=' '
+ 
+  Range for         Mean        Mean        Number of      Model
+  Predicted        Target    Predicted    Observations     Score
+ 
+7.277 -  7.404    8.16667     7.35084            6        7.34036
+7.149 -  7.277    7.75000     7.21573            8        7.21276
+7.021 -  7.149    7.50000     7.07728           14        7.08516
+6.894 -  7.021    7.34483     6.95449           29        6.95756
+6.766 -  6.894    7.10526     6.81568           38        6.82995
+6.639 -  6.766    6.83607     6.70015           61        6.70235
+6.511 -  6.639    6.80247     6.57532           81        6.57475
+6.383 -  6.511    6.56566     6.44161           99        6.44714
+6.256 -  6.383    6.37705     6.32017          122        6.31954
+6.128 -  6.256    6.17600     6.18635          125        6.19194
+6.001 -  6.128    5.96350     6.06842          137        6.06434
+5.873 -  6.001    5.84507     5.94111          142        5.93673
+5.745 -  5.873    5.46341     5.81036          164        5.80913
+5.618 -  5.745    5.25150     5.68342          167        5.68153
+5.490 -  5.618    5.29508     5.55261          122        5.55392
+5.363 -  5.490    5.43939     5.42374          132        5.42632
+5.235 -  5.363    5.48667     5.30210          150        5.29872
+5.107 -  5.235    5.44628     5.16601          121        5.17111
+4.980 -  5.107    5.39259     5.04386          135        5.04351
+4.852 -  4.980    5.33333     4.93423           84        4.91591
