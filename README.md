@@ -5,6 +5,8 @@ satisfaction. Using the WineSatisfaction.csv dataset, I ascertained if pH, alcoh
 customer perception of quality. 
 
 Results:
+![wine data](https://user-images.githubusercontent.com/114897374/225187347-d5568fbf-b0ff-4006-a42e-55760921ae90.png)
+
 
 The alcohol content  and retail price of the wine influence the customer perception of quality with p-values of 0.0019 and 0.0001 respectively.
 The pH however does not statistically influence the customer perception of wine quality because it has a p-value of 0.2463.
