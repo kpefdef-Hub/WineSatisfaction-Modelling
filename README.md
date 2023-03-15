@@ -32,9 +32,7 @@ will have a Quality rating of 5.22 based on the calculation below:
 
 # WineSatisfaction-T Test (1-tail test)
 
-![ttest_wine](https://user-images.githubusercontent.com/114897374/225188454-37f6aaeb-f773-4437-9d72-f93b45240748.png)
-
-(Apologies for the dark image - click to open)
+![Picture6](https://user-images.githubusercontent.com/114897374/225190107-165833c5-6c6f-4a61-b14f-21b36cd08bd4.png)
 
 
 The p-value of the T test is less than the confidence level of 0.05 at 2.44403452210091E-22 which means the analysis is significant. 
