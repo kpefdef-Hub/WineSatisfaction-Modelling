@@ -30,38 +30,17 @@ will have a Quality rating of 5.22 based on the calculation below:
 =     5.2225
 
 
-# WineSatisfaction-Logistic Confusion Matrix
+# WineSatisfaction-T Test (1-tail test)
 
-![wine confusionmatrix](https://user-images.githubusercontent.com/114897374/225187931-708843f1-8796-4ccf-93d0-f4c76d8f24b6.png)
+![ttest_wine](https://user-images.githubusercontent.com/114897374/225188454-37f6aaeb-f773-4437-9d72-f93b45240748.png)
 
 
-True Negative: 
-●	These are the instances where our model correctly predicted that the Loan customer defaulted on the loan.
-●	Here, our model correctly predicts that 6961 out  of the 9000 loan customers in the Testing data defaulted on their loans
-False Negative: 
-●	This shows the number of instances our model predicted that the Loan customer defaulted on their loan  when the actual data showed that the customer repaid the loan in time.
-●	Out of the sample of 9000, the model falsely predicted that 1882 defaulted on their loans.
-True Positive:
-●	These are the number of instances that our model correctly predicted that the loan customer repaid the loan. 
-●	Here, the model correctly predicted that 110 of the 9000 customers repaid their loans.
-False Positive: 
-●	These are the number of instances that our model predicted the loan customer repaid on the loan when they actually defaulted. 
-●	Our model predicted that 48 customers out of the 9000 repaid  their loan when the actual data showed that they defaulted on their loans.
+The p-value of the T test is less than the confidence level of 0.05 at 2.44403452210091E-22 which means the analysis is significant. 
+The mean value for the Customer perception of the quality of White wine at 5.88 is higher than the mean for Red wine which is 5.64. The negative t-stat also supports us that the Customer perception of White wine is greater than for Red wine. 
+Therefore, we reject the null hypothesis that the Customer perception of the quality of red wine is the same as white wine.
 
-Accuracy
-(TP+TN/(TP+TN+FP+FN)
-=    (110+6961)/(110+6961+48+1882)
-=    0.7856
 
-Precision
-TP/(TP+FP)
-=    110/(110+48)
-=    0.6962
 
-Recall
-TP/(TP+FN)
-=    110/(110+1882)
-=    0.0552
 
 
 
