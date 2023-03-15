@@ -32,8 +32,7 @@ will have a Quality rating of 5.22 based on the calculation below:
 
 # WineSatisfaction-T Test (1-tail test)
 
-![Picture6](https://user-images.githubusercontent.com/114897374/225190107-165833c5-6c6f-4a61-b14f-21b36cd08bd4.png)
-
+![Screenshot (57)](https://user-images.githubusercontent.com/114897374/225190343-7e1381ab-b440-440d-a584-72b1ba26e235.png)
 
 The p-value of the T test is less than the confidence level of 0.05 at 2.44403452210091E-22 which means the analysis is significant. 
 The mean value for the Customer perception of the quality of White wine at 5.88 is higher than the mean for Red wine which is 5.64. The negative t-stat also supports us that the Customer perception of White wine is greater than for Red wine. 
